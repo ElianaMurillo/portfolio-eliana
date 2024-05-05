@@ -64,19 +64,35 @@ function App() {
       id: ACADEMIC_KEYS.ORACLE_ALURA,
       description: "ONE - Oracle Next Education",
       dates: "2024 - Present",
-      items: ["poner", "cosas", "aqui", ""],
+      items:
+      [
+        "Frontend developer specialization course.",
+        "Use and learn about agile methodology.",
+        "Create web sites in React.",
+        "Asynchronous work."
+      ],
     },
     {
       id: ACADEMIC_KEYS.MELI,
       description: "Certified Tech Developer",
       dates: "2021 - 2023",
-      items: ["Frontend web design integrating HTML, CSS, Javascript, Node JS and React.", "Bases and fundamentals of backend development in Java, as well as bases and fundamentals of Docker, containers, AWS and cloud management and recognition of the command console.", "Creation of web user interfaces, applying design systems focused on user experience and the development of solutions and products.", "Design, structuring, manipulation and query of data in relational databases, through the use of SQL."],
+      items:
+      [
+        "Frontend web design integrating HTML, CSS, Javascript, Node JS and React.",
+        "Bases and fundamentals of backend development in Java, as well as bases and fundamentals of Docker, containers, AWS and cloud management and recognition of the command console.",
+        "Creation of web user interfaces, applying design systems focused on user experience and the development of solutions and products.",
+        "Design, structuring, manipulation and query of data in relational databases, through the use of SQL."],
     },
     {
       id: ACADEMIC_KEYS.UECI,
       description: "Electrical Engineering Professional",
       dates: "2017 - 2022",
-      items: ["Active participation in a research and analysis group, contributing to the development of two specific documents within the electrical and statistical academic field with data analysis and manipulation.", "cosas", "aquí", ""],
+      items: [
+        "Active participation in a research and analysis group, contributing to the development of two specific documents within the electrical and statistical academic field with data analysis and manipulation.",
+        "",
+        "",
+        ""
+      ],
     }
   ]
 
@@ -266,36 +282,18 @@ function App() {
       </section>
 
       <section className='style-section'>
-        <div className='container-contact-me'>
+        <div id='contact-me' className='container-contact-me'>
           <p className='title-contact-me'>Do you want to work together and create amazing products with me?</p>
-
-            <Contact />
-
-          {/*<form className='container-form-contact-me'>
-            <label className='input-form-contact-me' htmlFor='name'></label>
-            <input id='name' name='name' type='text' placeholder='Name Lastname' />
-
-            <label className='input-form-contact-me' htmlFor='email'></label>
-            <input id='email' name='email' type='email' placeholder='email@company.com' />
-
-            <label className='input-form-contact-me' htmlFor='subject'></label>
-            <input id='subject' name='subject' type='text' placeholder='Subject' />
-
-            <label className='input-form-contact-me' htmlFor='message'></label>
-            <input id='message' name='message' type='text' placeholder='Message' />
-          </form>
-
-          <div id='contact-me' className="container-btn-contact-me">
-            <button>Send Email</button>
-          </div>*/}
-
+          <Contact />
         </div>
       </section>
 
-      <footer>
+      <footer className='footer'>
         <p>Desarrollado por Eli.</p>
-        <a style={{ display: "table-cell" }} href="https://www.linkedin.com/in/eliana-murillo-0a1288202/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
-        <a style={{ display: "table-cell" }} href="https://github.com/ElianaMurillo" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+        <div>
+          <a style={{ display: "table-cell" }} href="https://www.linkedin.com/in/eliana-murillo-0a1288202/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
+          <a style={{ display: "table-cell" }} href="https://github.com/ElianaMurillo" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+        </div>
       </footer>
 
     </div>
